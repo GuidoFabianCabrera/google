@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?8famu3");
+  src: url("fonts/icomoon.eot?8famu3#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?8famu3") format("truetype"),
+    url("fonts/icomoon.woff?8famu3") format("woff"),
+    url("fonts/icomoon.svg?8famu3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mic:before {
+  content: "\e900";
+}
+.icon-searchs:before {
+  content: "\e901";
+}
+.icon-apps:before {
+  content: "\e902";
+}
+
+/* ------------------------------CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* -------------------------Head */
+
+header {
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px;
+}
+
+header a {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: rgb(102 102 102 / 87%);
+}
+
+.icon-apps {
+  font-size: 27px;
+  color: rgb(102 102 102 / 87%);
+}
+.icon-apps:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+header button {
+  background: rgb(66, 133, 244);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgb(66, 133, 244);
+  padding: 0 12px;
+  border-radius: 2px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+header button:active {
+  background: #3d79e1;
+  box-shadow: inset 0px 20px 0px -17px rgba(0, 0, 0, 0.14);
+}
+
+header button:hover {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+header button:focus {
+  outline: none;
+}
+
+/* -------------------------Main Section */
+
+.mainSection {
+  margin-top: 150px;
+}
+
+.mainSection_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 272px;
+  height: 92px;
+}
+
+.search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: auto;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.search:hover {
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.search a {
+  text-decoration: none;
+  color: #9aa0a6;
+}
+
+.search input {
+  border: none;
+  width: 400px;
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search_mic {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mainSection button {
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  padding: 10px 18px;
+  color: #5f6368;
+  border-radius: 4px;
+  margin: 0px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mainSection button:hover {
+  border: 1px solid #c6c6c6;
+  color: black;
+}
+
+.mainSection button:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+.offered {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  margin: 32px 10px;
+}
+
+.offered p {
+  margin: 0;
+}
+
+.offered a {
+  text-align: center;
+  margin: 0 5px;
+  color: rgb(26, 13, 171);
+  text-decoration: none;
+}
+
+.offered a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------- Footer */
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.country {
+  color: rgba(0, 0, 0, 0.54);
+  background: #f2f2f2;
+  margin: 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+.country p {
+  margin: 0;
+  padding: 11px 30px;
+  font-size: 15px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  padding: 12px;
+}
+
+.footer a {
+  align-self: center;
+  text-decoration: none;
+  color: rgb(95, 99, 104);
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.rigth {
+  text-align: right;
+}
+
+@media (max-width: 821px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 7px;
+  }
+  .left {
+    text-align: center;
+  }
+
+  .rigth {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    position: relative;
+  }
+}
